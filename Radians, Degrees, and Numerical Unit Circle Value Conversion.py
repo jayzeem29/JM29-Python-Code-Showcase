@@ -13,19 +13,19 @@ while True:
     main_menu()
     try:
         scenario = int(input("Type the number here: "))
-        if scenario == 1:
+        if scenario == 1: # SCENARIO 1 - Radians to Degrees Conversion
             radians = float(input("Enter the angle in radians: "))
             degrees = math.degrees(radians)
             print ("\n OUTPUT:")
             print (f"{radians} radians is equal to {degrees} degrees. \n")
             # when prints are completed, program returns user to Main Menu
-        elif scenario == 2:
+        elif scenario == 2: # SCENARIO 2 - Degrees to Radians Conversion
             degrees = float(input("Enter the angle in degrees: "))
             radians = math.radians(degrees)
             print ("\n OUTPUT:")
             print (f"{degrees} degrees is equal to {radians} radians. \n")
             # when prints are completed, program returns user to Main Menu
-        elif scenario == 3:
+        elif scenario == 3: # SCENARIO 3 - Degrees/Radians to Numerical Value in Unit Circle Conversion
             print("If your angle is in radians, type '1'. If your angle is in degrees, type '2'.")
             rad_or_deg = int(input("Type the number here: "))
             if rad_or_deg == 1:
@@ -69,7 +69,7 @@ while True:
                 print (f"The {trig_function} value of {math.degrees(angle)} degrees is {trig_value} \n")
             # To return variable 'angle' in degrees, math.degrees is necessary
             # when prints are completed, program returns user to Main Menu
-        elif scenario == 4:
+        elif scenario == 4: # Allows user to quit the program while running it
             print ("END")
             break # ends the loop and program
         else:
